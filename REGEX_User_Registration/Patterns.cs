@@ -31,7 +31,7 @@ namespace REGEX_User_Registration
             return Regex.IsMatch(PhoneNumber, REGEX_PHONENUMBER);
         }
 
-        public static string REGEX_PASSWORD = "(?=.*[A-Z])[a-zA-Z]{8,}$";
+        public static string REGEX_PASSWORD = "(?=.*[A-Z])[a-zA-Z0-9]{8}$";
         public bool validatePassWord(string PassWord)
         {
             return Regex.IsMatch(PassWord, REGEX_PASSWORD);
