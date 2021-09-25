@@ -29,9 +29,14 @@ namespace REGEX_User_Registration
                         Console.WriteLine(patterns.validateLastName(str1));
                         break;
                     case 3:
-                        Console.WriteLine("Enter Email ID: ");
-                        string str2 = Console.ReadLine();
-                        Console.WriteLine(patterns.validateEmailId(str2));
+                        Console.WriteLine("Enter how many email do you want to check:");
+                        int n = Convert.ToInt32(Console.ReadLine());
+                        for (int i = 0; i < n; i++)
+                        {
+                            Console.WriteLine("Enter Email ID: ");
+                            string str2 = Console.ReadLine();
+                            Console.WriteLine(patterns.validateEmailId(str2));
+                        }
                         break;
                     case 4:
                         Console.WriteLine("Enter Phone Number: ");
