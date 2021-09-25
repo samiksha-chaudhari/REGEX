@@ -12,7 +12,7 @@ namespace REGEX_User_Registration
 
             while (defcount == 0)
             {
-                Console.WriteLine("1.First Name  2.Last Name  3.Email ID  4.Exit");
+                Console.WriteLine("1.First Name  2.Last Name  3.Email ID  4.Phone No.  5.Exit");
                 Console.WriteLine("Choose Option :");
                 int choice = Convert.ToInt32(Console.ReadLine());//variable for taking choice from the user
 
@@ -32,6 +32,11 @@ namespace REGEX_User_Registration
                         Console.WriteLine("Enter Email ID: ");
                         string str2 = Console.ReadLine();
                         Console.WriteLine(patterns.validateEmailId(str2));
+                        break;
+                    case 4:
+                        Console.WriteLine("Enter Phone Number: ");
+                        string str3 = Console.ReadLine();
+                        Console.WriteLine(patterns.validatePhoneNumber(str3));
                         break;
                     default:
                         Console.WriteLine("End");//default condition

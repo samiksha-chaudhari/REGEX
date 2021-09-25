@@ -24,6 +24,12 @@ namespace REGEX_User_Registration
         {
             return Regex.IsMatch(EmailId, REGEX_EMAILID);
         }
+
+        public static string REGEX_PHONENUMBER = @"^\+?\d{0,2}\-?\d{4,5}\-?\d{5,6}$";
+        public bool validatePhoneNumber(string PhoneNumber)
+        {
+            return Regex.IsMatch(PhoneNumber, REGEX_PHONENUMBER);
+        }
     }
 
 }
