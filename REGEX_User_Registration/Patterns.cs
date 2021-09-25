@@ -30,6 +30,12 @@ namespace REGEX_User_Registration
         {
             return Regex.IsMatch(PhoneNumber, REGEX_PHONENUMBER);
         }
+
+        public static string REGEX_PASSWORD = @"^(.{0,7}|[^0-9]*|[^a-z])$";
+        public bool validatePassWord(string PassWord)
+        {
+            return Regex.IsMatch(PassWord, REGEX_PASSWORD);
+        }
     }
 
 }
