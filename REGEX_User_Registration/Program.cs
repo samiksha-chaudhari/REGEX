@@ -7,7 +7,7 @@ namespace REGEX_User_Registration
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to User Registration");
-            Patterns patterns = new Patterns();
+            Patterns patterns = new Patterns();//creating object
             int defcount = 0;//counter to break the while loop
 
             while (defcount == 0)
@@ -31,7 +31,7 @@ namespace REGEX_User_Registration
                     case 3:
                         Console.WriteLine("Enter how many email do you want to check:");
                         int n = Convert.ToInt32(Console.ReadLine());
-                        for (int i = 0; i < n; i++)
+                        for (int i = 0; i < n; i++)//checking email validate till n
                         {
                             Console.WriteLine("Enter Email ID: ");
                             string str2 = Console.ReadLine();
