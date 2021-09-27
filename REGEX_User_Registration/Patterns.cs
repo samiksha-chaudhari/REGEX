@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace REGEX_User_Registration
 {
-    class Patterns
+    public class Patterns
     {
         //pattern for firstname
         public static string REGEX_FIRSTNAME = "^[A-Z][a-z A-Z]*$";
