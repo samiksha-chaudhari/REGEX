@@ -7,6 +7,7 @@ namespace REGEX_User_Registration
 {
     class Patterns
     {
+        //pattern for firstname
         public static string REGEX_FIRSTNAME = "^[A-Z][a-z A-Z]*$";
         /// <summary>
         /// method to check first name
@@ -18,6 +19,8 @@ namespace REGEX_User_Registration
             return Regex.IsMatch(FirstName, REGEX_FIRSTNAME);
         }
 
+
+        //pattern for lastname
         public static string REGEX_LASTNAME = "^[A-Z][a-z A-Z]*$";
         /// <summary>
         /// method to check last name
@@ -29,6 +32,8 @@ namespace REGEX_User_Registration
             return Regex.IsMatch(LastName, REGEX_LASTNAME);
         }
 
+        
+        //pattern for email
         public static string REGEX_EMAILID = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
         /// <summary>
         /// method to check email id
@@ -40,6 +45,8 @@ namespace REGEX_User_Registration
             return Regex.IsMatch(EmailId, REGEX_EMAILID);
         }
 
+
+        //pattern for phone number
         public static string REGEX_PHONENUMBER = @"^\+?\d{0,2}\-?\d{4,5}\-?\d{5,6}$";
         /// <summary>
         /// method to check phone number
@@ -51,6 +58,8 @@ namespace REGEX_User_Registration
             return Regex.IsMatch(PhoneNumber, REGEX_PHONENUMBER);
         }
 
+
+        //pattern for password
         public static string REGEX_PASSWORD = "(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*()_+=-])[a-zA-Z0-9!@#$%^&*()_+=-]{8,}$";
         /// <summary>
         /// method to check password
