@@ -21,7 +21,8 @@ namespace REGEX_User_Registration
                     case 1:
                         Console.WriteLine("Enter First Name: ");
                         string str = Console.ReadLine();
-                        Console.WriteLine(patterns.validateFirstName(str));
+                        bool result=(patterns.validateFirstName(str));
+                        Console.WriteLine(result);
                         break;
                     case 2:
                         Console.WriteLine("Enter Last Name: ");
