@@ -6,7 +6,7 @@ namespace TestProject1
     [TestClass]
     public class UnitTest1
     {
-        Patterns pattern = new Patterns();
+        Patterns pattern = new Patterns();//creating object
         /// <summary>
         /// Tests the first name
         /// </summary>
