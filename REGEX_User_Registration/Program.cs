@@ -10,7 +10,7 @@ namespace REGEX_User_Registration
             Patterns patterns = new Patterns();//creating object
             int defcount = 0;//counter to break the while loop
 
-            while (defcount == 0)
+            while (defcount == 0)//while loop to exit from switch case
             {
                 Console.WriteLine("1.First Name  2.Last Name  3.Email ID  4.Phone No.  5.Password  6.Exit");
                 Console.WriteLine("Choose Option :");
@@ -55,7 +55,7 @@ namespace REGEX_User_Registration
                         break;
                     default:
                         Console.WriteLine("End");//default condition
-                        defcount++;
+                        defcount++;//to remove from switch case
                         break;
                
                 }

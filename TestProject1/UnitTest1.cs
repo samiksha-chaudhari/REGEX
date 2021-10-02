@@ -14,6 +14,7 @@ namespace TestProject1
        
         public void TestFirstName()
         {
+            //matching name with pattern and store result 
             bool result = pattern.ValidateFirstName("Samiksha", Patterns.REGEX_FIRSTNAME);
             Assert.IsTrue(result);
         }
@@ -40,6 +41,7 @@ namespace TestProject1
         
         public void TestLastName()
         {
+            //matching name with pattern and store result
             bool result = pattern.ValidateLastName("Chaudhari", Patterns.REGEX_LASTNAME);
             Assert.IsTrue(result);
         }
@@ -66,6 +68,7 @@ namespace TestProject1
         
         public void TestEmail()
         {
+            //matching emil with pattern and store result
             bool result = pattern.ValidateEmail("spchaudhari80@gmail.com", Patterns.REGEX_EMAILID);
             Assert.IsTrue(result);
         }
@@ -93,6 +96,7 @@ namespace TestProject1
         
         public void TestMobileNumber()
         {
+            //matching phone num with pattern and store result
             bool result = pattern.ValidatePhoneNum("91 9123456789", Patterns.REGEX_PHONENUMBER);
             Assert.IsTrue(result);
         }
@@ -118,6 +122,7 @@ namespace TestProject1
         
         public void Testpassword()
         {
+            //matching password with pattern and store result
             bool result = pattern.ValidatePassword("RAw@#5856", Patterns.REGEX_PASSWORD);
             Assert.IsTrue(result);
         }
