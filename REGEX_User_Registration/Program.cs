@@ -21,13 +21,14 @@ namespace REGEX_User_Registration
                     case 1:
                         Console.WriteLine("Enter First Name: ");
                         string str = Console.ReadLine();
-                        bool result=(patterns.validateFirstName(str));
+                        bool result= patterns.ValidateFirstName(str, Patterns.REGEX_FIRSTNAME);
                         Console.WriteLine(result);
                         break;
                     case 2:
                         Console.WriteLine("Enter Last Name: ");
                         string str1 = Console.ReadLine();
-                        Console.WriteLine(patterns.validateLastName(str1));
+                        bool result1 = patterns.ValidateLastName(str1, Patterns.REGEX_LASTNAME);
+                        Console.WriteLine(result1);
                         break;
                     case 3:
                         Console.WriteLine("Enter how many email do you want to check:");
@@ -36,18 +37,21 @@ namespace REGEX_User_Registration
                         {
                             Console.WriteLine("Enter Email ID: ");
                             string str2 = Console.ReadLine();
-                            Console.WriteLine(patterns.validateEmailId(str2));
+                            bool result3 = patterns.ValidateEmail(str2, Patterns.REGEX_EMAILID);
+                            Console.WriteLine(result3);
                         }
-                        break;
+                            break;
                     case 4:
                         Console.WriteLine("Enter Phone Number: ");
                         string str3 = Console.ReadLine();
-                        Console.WriteLine(patterns.validatePhoneNumber(str3));
+                        bool result4 = patterns.ValidatePhoneNum(str3, Patterns.REGEX_PHONENUMBER);
+                        Console.WriteLine(result4);
                         break;
                     case 5:
                         Console.WriteLine("Enter Password: ");
                         string str4 = Console.ReadLine();
-                        Console.WriteLine(patterns.validatePassWord(str4));
+                        bool result5 = patterns.ValidatePassword(str4, Patterns.REGEX_PASSWORD);
+                        Console.WriteLine(result5);
                         break;
                     default:
                         Console.WriteLine("End");//default condition
