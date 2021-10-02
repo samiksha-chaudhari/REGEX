@@ -40,7 +40,7 @@ namespace TestProject1
         
         public void TestLastName()
         {
-            bool result = pattern.ValidateLastName("Mayur", Patterns.REGEX_LASTNAME);
+            bool result = pattern.ValidateLastName("Chaudhari", Patterns.REGEX_LASTNAME);
             Assert.IsTrue(result);
         }
         /*
